@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MessageCircle, Phone, Send } from "lucide-react";
+import { MessageCircle, Phone, Send, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -23,29 +23,36 @@ const ContactSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">Contact</p>
-          <h2 className="section-title">Contactez-nous</h2>
-          <p className="section-subtitle">Une question ? N'hésitez pas à nous contacter par téléphone, WhatsApp ou via le formulaire ci-dessous.</p>
+          <h2 className="section-title">Prenez rendez-vous</h2>
+          <p className="section-subtitle">Sur rendez-vous uniquement. Contactez-nous pour soulager vos douleurs dentaires rapidement.</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* CTA buttons */}
+          {/* Contact Info */}
           <div className="space-y-6 flex flex-col justify-center">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground w-full justify-center shadow-elevated" asChild>
-              <a href="https://wa.me/33123456789" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Écrire sur WhatsApp
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" className="w-full justify-center" asChild>
-              <a href="tel:+33123456789">
-                <Phone className="mr-2 h-5 w-5" />
-                Appeler : +33 1 23 45 67 89
-              </a>
-            </Button>
             <div className="bg-card rounded-2xl p-6 shadow-card">
-              <p className="text-foreground font-semibold mb-1">Horaires d'ouverture</p>
-              <p className="text-muted-foreground text-sm">Lun-Ven : 08h - 18h · Sam : 09h - 13h</p>
-              <p className="text-muted-foreground text-sm mt-2">Urgences disponibles en dehors des heures d'ouverture. Contactez-nous par WhatsApp.</p>
+              <div className="flex items-center gap-3 mb-3">
+                <MapPin className="h-5 w-5 text-primary" />
+                <p className="text-foreground font-semibold">Adresse</p>
+              </div>
+              <p className="text-muted-foreground">09 Av. Habib Thameur, Le Passage</p>
+              <p className="text-muted-foreground">1000 Tunis, Tunisie</p>
+            </div>
+
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground w-full justify-center shadow-elevated" asChild>
+              <a href="tel:+2162271531">
+                <Phone className="mr-2 h-5 w-5" />
+                Appeler : 22 271 531
+              </a>
+            </Button>
+
+            <div className="bg-card rounded-2xl p-6 shadow-card">
+              <div className="flex items-center gap-3 mb-3">
+                <Clock className="h-5 w-5 text-primary" />
+                <p className="text-foreground font-semibold">Sur rendez-vous uniquement</p>
+              </div>
+              <p className="text-muted-foreground text-sm">Nous prenons le temps nécessaire pour chaque patient afin d'assurer des soins de qualité.</p>
+              <p className="text-muted-foreground text-sm mt-2">Pour les douleurs importantes, contactez-nous rapidement.</p>
             </div>
           </div>
 
@@ -73,7 +80,7 @@ const ContactSection = () => {
               maxLength={20}
             />
             <Textarea
-              placeholder="Votre message *"
+              placeholder="Décrivez votre douleur ou vos besoins *"
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
               maxLength={1000}

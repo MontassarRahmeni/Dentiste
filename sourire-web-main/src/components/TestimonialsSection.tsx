@@ -1,19 +1,19 @@
 import { Star, Quote } from "lucide-react";
 
 const testimonials = [
-  { name: "Sophie L.", text: "Un cabinet exceptionnel ! Le Dr. Martin est très professionnel et à l'écoute. Je recommande vivement.", rating: 5 },
-  { name: "Mohamed K.", text: "Excellent accueil et soins de qualité. Le détartrage a été rapide et indolore. Merci beaucoup !", rating: 5 },
-  { name: "Claire D.", text: "J'avais très peur du dentiste, mais l'équipe m'a mise en confiance. Le cabinet est très moderne et propre.", rating: 5 },
-  { name: "Pierre M.", text: "Implant dentaire réalisé avec succès. Résultat parfait et suivi impeccable. Je suis très satisfait.", rating: 5 },
+  { name: "Sonia T.", text: "Dr Khedher est très professionnel et patient. Il explique chaque détail et prend son temps. Cabinet impeccable !", rating: 5 },
+  { name: "Karim B.", text: "J'avais une douleur dentaire importante. Traitement rapide et efficace. Je me suis senti en confiance.", rating: 5 },
+  { name: "Fatma R.", text: "Le cabinet est très moderne et propre. Le Dr Mouwahed est rassurant et méticuleux. Je recommande vivement.", rating: 4 },
+  { name: "Youssef L.", text: "Extraction des dents de sagesse sans douleur. Explications claires avant et après. Service exceptionnel.", rating: 5 },
 ];
 
 const TestimonialsSection = () => (
   <section id="avis" className="section-padding bg-dental-warm">
     <div className="container mx-auto">
       <div className="text-center mb-16">
-        <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">Témoignages</p>
-        <h2 className="section-title">Ce que disent nos patients</h2>
-        <p className="section-subtitle">La satisfaction de nos patients est notre plus grande récompense.</p>
+        <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">Avis patients</p>
+        <h2 className="section-title">4.7/5 ⭐ (48 avis)</h2>
+        <p className="section-subtitle">Nos patients apprécient notre professionnalisme, patience et cabinet moderne.</p>
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

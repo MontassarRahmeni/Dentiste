@@ -11,7 +11,7 @@ const Footer = () => (
         <div>
           <h3 className="font-heading text-lg font-semibold mb-3">Contact</h3>
           <div className="space-y-2 text-sm text-primary-foreground/70">
-            <p className="flex items-center gap-2"><Phone className="h-4 w-4" /> +33 1 23 45 67 89</p>
+            <p className="flex items-center gap-2"><Phone className="h-4 w-4" /> +216 22 271 531</p>
             <p className="flex items-center gap-2"><MapPin className="h-4 w-4" /> 12 Rue de la Santé, Paris</p>
           </div>
         </div>

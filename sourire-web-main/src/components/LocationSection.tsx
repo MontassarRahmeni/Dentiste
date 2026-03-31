@@ -47,7 +47,7 @@ const LocationSection = () => (
             </div>
             <div>
               <h3 className="font-heading text-lg font-semibold text-foreground">Téléphone</h3>
-              <p className="text-muted-foreground">+33 1 23 45 67 89</p>
+              <p className="text-muted-foreground">+216 22 271 531</p>
             </div>
           </div>
 

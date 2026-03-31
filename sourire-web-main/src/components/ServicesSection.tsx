@@ -1,12 +1,12 @@
-import { Stethoscope, Sparkles, Sun, Wrench, AlignVerticalSpaceAround, Siren } from "lucide-react";
+import { Stethoscope, Sparkles, Heart, Wrench, AlignVerticalSpaceAround, Clock } from "lucide-react";
 
 const services = [
-  { icon: Stethoscope, title: "Soins dentaires", desc: "Traitement des caries, dévitalisations et restaurations pour une santé bucco-dentaire optimale." },
-  { icon: Sparkles, title: "Détartrage", desc: "Nettoyage professionnel pour éliminer le tartre et prévenir les maladies parodontales." },
-  { icon: Sun, title: "Blanchiment des dents", desc: "Techniques avancées pour un sourire éclatant et naturel en toute sécurité." },
-  { icon: Wrench, title: "Implants dentaires", desc: "Remplacement durable des dents manquantes grâce aux implants de dernière génération." },
-  { icon: AlignVerticalSpaceAround, title: "Orthodontie", desc: "Alignement dentaire avec des solutions modernes, discrètes et efficaces." },
-  { icon: Siren, title: "Urgences dentaires", desc: "Prise en charge rapide des douleurs, traumatismes et urgences dentaires." },
+  { icon: Stethoscope, title: "Soins dentaires généraux", desc: "Traitement des caries, dévitalisations et restaurations pour une santé bucco-dentaire optimale." },
+  { icon: Sparkles, title: "Détartrage et nettoyage", desc: "Nettoyage professionnel pour éliminer le tartre et prévenir les maladies parodontales." },
+  { icon: Heart, title: "Traitement des douleurs dentaires", desc: "Diagnostic et traitement rapide des douleurs pour soulager votre inconfort." },
+  { icon: Wrench, title: "Extraction des dents de sagesse", desc: "Extraction experte des dents de sagesse avec des techniques modernes et peu douloureuses." },
+  { icon: AlignVerticalSpaceAround, title: "Orthodontie", desc: "Redressement des dents avec des solutions modernes pour un sourire harmonieux." },
+  { icon: Clock, title: "Sur rendez-vous uniquement", desc: "Nous prenons le temps nécessaire pour chaque patient afin d'assurer des soins de qualité." },
 ];
 
 const ServicesSection = () => (
@@ -14,8 +14,8 @@ const ServicesSection = () => (
     <div className="container mx-auto">
       <div className="text-center mb-16">
         <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-2">Nos services</p>
-        <h2 className="section-title">Des soins complets pour toute la famille</h2>
-        <p className="section-subtitle">Nous proposons une gamme complète de soins dentaires pour répondre à tous vos besoins.</p>
+        <h2 className="section-title">Soins dentaires professionnels à Tunis</h2>
+        <p className="section-subtitle">Dr Khedher Mouwahed propose une gamme complète de soins dentaires avec patience et professionnalisme.</p>
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
